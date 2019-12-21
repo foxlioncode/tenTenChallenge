@@ -1,6 +1,22 @@
+/* <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries> */
 /* <https://developer.mozilla.org/en-US/docs/Web/CSS/@media> */
 /* <https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule> */
 
-@media screen and (max-screen-width: 480) {
+/* Media Types */
+/* <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_types> */
 
+/* Media Features */
+/* <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features> */
+
+/* Logical Operators */
+/* <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Logical_operators> */
+
+/* Syntax */
+/* @media <media-type>  */
+
+
+@media screen and (max-width: 360px) {
+    body {
+        background-color: slategrey;
+    }
 }

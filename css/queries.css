@@ -20,4 +20,12 @@
     body {
         background-color: slategrey;
     }
+
+    .center-heading {
+        border: 1px solid red;
+        display: block;
+        text-align: center;
+        font-family: 'Poiret One', cursive;
+        color: white;
+    }
 }

@@ -2,17 +2,18 @@
 /* <https://developer.mozilla.org/en-US/docs/Web/CSS/@media> */
 /* <https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule> */
 
+/* Syntax */
+/* - @media <media-type> <logical-operator> (<media-features>) {<group-rule-body>}  */
+
 /* Media Types */
-/* <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_types> */
+/* - <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_types> */
 
 /* Media Features */
-/* <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features> */
+/* - <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features> */
 
 /* Logical Operators */
-/* <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Logical_operators> */
+/* - <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Logical_operators> */
 
-/* Syntax */
-/* @media <media-type>  */
 
 
 @media screen and (max-width: 360px) {

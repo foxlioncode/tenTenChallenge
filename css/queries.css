@@ -28,4 +28,16 @@
         font-family: 'Poiret One', cursive;
         color: white;
     }
+    
+    .center-container {
+        border: 1px solid red;
+        display: block;
+        text-align: center;
+        font-family: 'Poiret One', cursive;
+        color: white;
+    }
+
+    svg {
+        border: 1px solid yellow;
+    }
 }

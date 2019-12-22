@@ -78,7 +78,8 @@
     .reset-button {
         /* background-color: #5bf3b9; */
         /* border: 1px solid purple; */
-        background-color: #8fabbb;
+        /* background-color: #8fabbb; */
+        background-color: red;
         color: black;
         /* border: 1px solid black; */
         padding: 5px;

@@ -22,7 +22,7 @@
     }
 
     .center-heading {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: block;
         text-align: center;
         font-family: 'Poiret One', cursive;
@@ -30,13 +30,17 @@
     }
     
     .center-container {
-        border: 1px solid purple;
+        /* border: 1px solid purple; */
         display: block;
         text-align: center;
         color: white;
         /* width: 280px; */
         width: auto;
         margin: auto;
+    }
+
+    .buttons-container {
+        width: 280px;
     }
 
     svg {
@@ -56,5 +60,12 @@
         background-color: lightblue;
         display: inline-block;
         border-radius: 50%;
+    }
+}
+
+/* @media screen and (max-width: 280px) { */
+@media screen and (width <= 280p) {
+    body {
+        background-color: red;
     }
 }

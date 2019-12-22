@@ -21,3 +21,9 @@ Dec 21 2019
 
 - <https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API>
 - <https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide>
+
+## Progressive Web Applications
+
+- <https://en.wikipedia.org/wiki/Progressive_web_application>
+- <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps>
+- <https://developers.google.com/web/progressive-web-apps/>

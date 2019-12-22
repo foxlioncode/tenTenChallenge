@@ -16,6 +16,7 @@
 /* ## Logical Operators */
 /* - <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Logical_operators> */
 
+/* SMALL PHONE SCREENS */
 @media screen and (max-width: 360px) {
     body {
         background-color: slategrey;
@@ -63,9 +64,14 @@
     }
 }
 
+/* EXTRA SMALL PHONE SCREENS */
 /* @media screen and (max-width: 280px) { */
-@media screen and (width <= 280p) {
+@media screen and (max-width: 280px) {
     body {
         background-color: red;
+    }
+
+    .buttons-container {
+        width: auto;
     }
 }

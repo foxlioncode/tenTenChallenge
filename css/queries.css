@@ -41,7 +41,7 @@
     }
 
     .buttons-container {
-        width: 280px;
+        width: 320px;
     }
 
     svg {
@@ -61,12 +61,14 @@
         background-color: lightblue;
         display: inline-block;
         border-radius: 50%;
+        box-shadow: 3px 3px 3px black;
+        margin: 5px;
     }
 }
 
 /* EXTRA SMALL PHONE SCREENS */
 /* @media screen and (max-width: 280px) { */
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 320px) {
     body {
         background-color: red;
     }

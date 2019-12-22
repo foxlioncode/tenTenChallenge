@@ -70,15 +70,25 @@
     li:hover { background: yellow; }  /* Hovered links */
     li:active { color: red; }         /* Active links */
 
+    .reset-container {
+        /* border: 1px solid yellow; */
+        text-align: right;
+    }
+
     .reset-button {
-        /* background-color: #e6b1ad; */
-        background-color: #e6dcad;
-        background-color: #d0ade6;
+        /* background-color: #5bf3b9; */
+        /* border: 1px solid purple; */
+        background-color: #8fabbb;
         color: black;
         /* border: 1px solid black; */
-        padding: 10px 50px 10px 50px;
+        padding: 5px;
+        margin-right: 10px;
         font-family: 'Poiret One', cursive;
         font-size: larger;
+        width: 30%;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* float: inline-end; */
     }
 }
 

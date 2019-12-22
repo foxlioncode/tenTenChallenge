@@ -64,6 +64,11 @@
         box-shadow: 3px 3px 3px black;
         margin: 5px;
     }
+    
+    li:link { color: blue; }          /* Unvisited links */
+    li:visited { color: purple; }     /* Visited links */
+    li:hover { background: yellow; }  /* Hovered links */
+    li:active { color: red; }         /* Active links */
 }
 
 /* EXTRA SMALL PHONE SCREENS */

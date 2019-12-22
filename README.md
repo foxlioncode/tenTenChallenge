@@ -11,4 +11,3 @@ Dec 21 2019
 - Use in practice. 10 sets of 10 = 100.
 
 ## Resources
-

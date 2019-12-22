@@ -1,5 +1,7 @@
 console.log("script.js CONNECTED");
 
+body.requestFullscreen();
+
 function resetBackgroundStyle() {
     let elementsArray = document.getElementsByTagName('li');
     

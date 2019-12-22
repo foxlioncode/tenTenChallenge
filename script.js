@@ -2,9 +2,7 @@ console.log("script.js CONNECTED");
 
 // body.requestFullscreen();
 
-// if(navigator.userAgent.match(/Android/i)){
-//     window.scrollTo(0,1);
-//  }
+window.scrollTo(0,1);
 
 function resetBackgroundStyle() {
     let elementsArray = document.getElementsByTagName('li');

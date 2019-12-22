@@ -58,7 +58,7 @@
     .button {
         height: 50px;
         width: 50px;
-        background-color: lightblue;
+        background-color: hsl(195, 53%, 79%);
         display: inline-block;
         border-radius: 50%;
         box-shadow: 3px 3px 3px black;
@@ -69,6 +69,17 @@
     li:visited { color: purple; }     /* Visited links */
     li:hover { background: yellow; }  /* Hovered links */
     li:active { color: red; }         /* Active links */
+
+    .reset-button {
+        /* background-color: #e6b1ad; */
+        background-color: #e6dcad;
+        background-color: #d0ade6;
+        color: black;
+        /* border: 1px solid black; */
+        padding: 10px 50px 10px 50px;
+        font-family: 'Poiret One', cursive;
+        font-size: larger;
+    }
 }
 
 /* EXTRA SMALL PHONE SCREENS */

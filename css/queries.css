@@ -56,13 +56,14 @@
     }
 
     .button {
+        border: 1px solid black;
         height: 50px;
         width: 50px;
         background-color: hsl(195, 53%, 79%);
         display: inline-block;
         border-radius: 50%;
         box-shadow: 3px 3px 3px black;
-        margin: 5px;
+        margin: 4px;
     }
     
     li:link { color: blue; }          /* Unvisited links */
@@ -72,17 +73,19 @@
 
     .reset-container {
         /* border: 1px solid yellow; */
+        /* width: 320px; */
+        /* width: 100%; */
         text-align: right;
     }
 
     .reset-button {
         /* background-color: #5bf3b9; */
-        /* border: 1px solid purple; */
+        /* border: 5px solid purple; */
         background-color: #8fabbb;
         color: black;
         /* border: 1px solid black; */
         padding: 5px;
-        margin-right: 10px;
+        margin-right: 5vw;
         font-family: 'Poiret One', cursive;
         font-size: larger;
         width: 30%;

@@ -43,4 +43,7 @@ Dec 21 2019
     - Calculate all totals.
 - Interval Wizard.
     - How many intervals in each set?
-    
+
+## TODO
+
+- [ ] Reset not working properly for state flag.

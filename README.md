@@ -31,3 +31,16 @@ Dec 21 2019
 ## Add App Icon
 
 - <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen>
+
+## Add Timer
+
+- Interval Timer
+    - Start Button
+    - Blinking circle is yellow.
+        - Click when finished task.
+        - Calculate over or under for each interval.
+        - List over/under inside the circle.
+    - Calculate all totals.
+- Interval Wizard.
+    - How many intervals in each set?
+    

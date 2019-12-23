@@ -27,3 +27,7 @@ Dec 21 2019
 - <https://en.wikipedia.org/wiki/Progressive_web_application>
 - <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps>
 - <https://developers.google.com/web/progressive-web-apps/>
+
+## Add App Icon
+
+- <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen>

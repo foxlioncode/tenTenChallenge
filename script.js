@@ -8,10 +8,10 @@ function getButtonState (clickedElement) {
 
 function renderButtonColor (buttonState, clickedElement) {
   // Toggle Button State
-  if (buttonState == true) {
-    clickedElement.setAttribute('buttonState', 0);
-  } else {
+  if (buttonState == false) {
     clickedElement.setAttribute('buttonState', 1);
+  } else {
+    clickedElement.setAttribute('buttonState', 0);
   }
 
   // Render Button Color

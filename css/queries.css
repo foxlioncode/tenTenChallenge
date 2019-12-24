@@ -80,6 +80,12 @@
         width: 320px;
     }
     
+    footer {
+        width: 320px;
+        margin: auto;
+        /* text-align: right; */
+    }
+    
     .reset-button {
         margin-right: 10px;
         margin-bottom: 10px;

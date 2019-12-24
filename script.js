@@ -1,17 +1,19 @@
 console.log("script.js CONNECTED");
 
-function getButtonState (clickedElement) {
-  let buttonState = Boolean(Number(clickedElement.getAttribute('buttonState')));
+function getButtonState(clickedElement) {
+  let buttonState = Boolean(Number(clickedElement.getAttribute("buttonState")));
+
   renderButtonColor(buttonState, clickedElement);
+
   return [buttonState, clickedElement];
 }
 
-function renderButtonColor (buttonState, clickedElement) {
+function renderButtonColor(buttonState, clickedElement) {
   // Toggle Button State
   if (buttonState == false) {
-    clickedElement.setAttribute('buttonState', 1);
+    clickedElement.setAttribute("buttonState", 1);
   } else {
-    clickedElement.setAttribute('buttonState', 0);
+    clickedElement.setAttribute("buttonState", 0);
   }
 
   // Render Button Color
@@ -26,7 +28,7 @@ function resetBackgroundStyle() {
   let elementsArray = document.getElementsByTagName("li");
 
   for (let i = 0; i < elementsArray.length; i++) {
-    elementsArray[i].setAttribute('buttonState', 0);
+    elementsArray[i].setAttribute("buttonState", 0);
     elementsArray[i].style.backgroundColor = "lightblue";
   }
 }

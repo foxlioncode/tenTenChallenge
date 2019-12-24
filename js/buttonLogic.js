@@ -1,4 +1,4 @@
-console.log("script.js CONNECTED");
+console.log("buttonLogic.js CONNECTED");
 
 function getButtonState(clickedElement) {
   let buttonState = Boolean(Number(clickedElement.getAttribute("buttonState")));

@@ -1,6 +1,8 @@
-const buttonScripts = require('./buttonLogic')
+const buttonLogic = require('./buttonLogic')
 
-// - <https://momentjs.com/>
+var testButton = document.getElementById('button01');
+
+console.log(buttonLogic.getButtonState(testButton));
 
 // Render Current Time
 var currentTime = document.getElementById('current-time');
@@ -11,7 +13,7 @@ var getCurrentTime = () => {
   currentTime.innerHTML = counter;
   counter++;
 //   button01.setAttribute('buttonState', '1');
-//   buttonScripts.getButtonState(button01);
+//   buttonLogic.getButtonState(button01);
   
   // currentTime.innerHTML = moment().local();
   // console.log(moment().local());

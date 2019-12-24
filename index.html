@@ -32,11 +32,17 @@
     <!-- <link rel="icon" sizes="128×128" href="https://via.placeholder.com/57x57"> -->
 
     <title>5X5</title>
-
+    
 </head>
 
 <body>
-    <h1 class="center-heading">10X10 Challenge</h1>
+    <div class="timer-container">
+        <div id="current-time"></div>
+    </div>
+    <h1 class="center-heading">5X5 Challenge</h1>
+    
+    <div id="watch1"></div>
+    <div id="watch2"></div>
 
     <hr>
     <div class="buttons-container center-container">
@@ -62,7 +68,7 @@
             <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
             <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
             <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            
+
             <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
             <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
             <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
@@ -79,7 +85,14 @@
         <!-- <a class="reset-button" href="#" onclick="resetBackgroundStyle()">Reset</a> -->
     </div>
 
-    <script src="./script.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.7/moment-timezone-with-data-2010-2020.min.js"></script>
+    <!-- <script src="./js/external/moment.min.js"></script> -->
+    <script src="./js/timer.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

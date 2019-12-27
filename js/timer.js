@@ -1,8 +1,6 @@
-var counter = 0;
-
-function renderCounterDisplay () {
-    document.getElementById('current-time').innerHTML = counter;
-    counter++
+function renderTimeDisplay () {
+    var currentTime = new Date()
+    document.getElementById('current-time').innerHTML = currentTime;
 }
 
-setInterval(renderCounterDisplay,1000);
+setInterval(renderTimeDisplay,1000);

@@ -1,43 +1,53 @@
 // ====================================================================================================
-function renderTimeDisplay () {
-    var currentTime = new Date()
-    document.getElementById('current-time').innerHTML = 
-        `
+function renderTimeDisplay() {
+  var currentTime = new Date();
+  document.getElementById("current-time").innerHTML = `
         ${currentTime.getHours()}:${currentTime.getMinutes()}:${currentTime.getSeconds()}
         `;
-    // document.getElementById('current-time').innerHTML = currentTime;
-    // document.getElementById('current-time').innerHTML = currentTime.getTime();
+  // document.getElementById('current-time').innerHTML = currentTime;
+  // document.getElementById('current-time').innerHTML = currentTime.getTime();
 }
 
 // setInterval(renderTimeDisplay,1000);
 
 // ====================================================================================================
 
-
-
 var totalSeconds = 0;
+var timerCountUp;
+var alreadyRunning = false;
 
-function increaseSeconds () {
-    totalSeconds++
-    document.getElementById('current-time').innerHTML = totalSeconds;
+function timerFunction() {
+  totalSeconds++;
+  renderTimer(totalSeconds);
 }
 
-
-
-// secondsDisplay();
-
-var startTimer = () => {
-    var secondsDisplay = setInterval(increaseSeconds(), 1);
+function startTimer() {
+  if (alreadyRunning) {
+  } else {
+    alreadyRunning = true;
+    timerCountUp = setInterval(timerFunction, 1000);
+  }
 }
 
-function renderTimer() {
+function stopTimer() {
+  //   renderTimer('stopTimer')
+  alreadyRunning = false;
+  clearInterval(timerCountUp);
 }
 
-function stopTimer () {
-    clearInterval(startTimer);
+function resetTimer() {
+  renderTimer("resetTimer");
+  stopTimer();
+  totalSeconds = 0;
+  //   renderTimer('RESET');
+  renderTimer("RESET");
+  setTimeout(() => {
+    renderTimer(totalSeconds);
+  }, 5000);
+
+  //   setTimeout(renderTimer(totalSeconds), 5000);
 }
 
-function resetTimer () {
+function renderTimer(item) {
+  document.getElementById("current-time").innerHTML = item;
 }
-
-

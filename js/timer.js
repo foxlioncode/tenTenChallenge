@@ -1,37 +1,35 @@
-const buttonLogic = require('./buttonLogic')
+// ====================================================================================================
+var totalSeconds = 0;
+var timerCountUp;
+var alreadyRunning = false;
 
-var testButton = document.getElementById('button01');
-
-console.log(buttonLogic.getButtonState(testButton));
-
-// Render Current Time
-var currentTime = document.getElementById('current-time');
-var counter = 0
-
-var getCurrentTime = () => {
-  // console.log('getCurrentTime()');
-  currentTime.innerHTML = counter;
-  counter++;
-//   button01.setAttribute('buttonState', '1');
-//   buttonLogic.getButtonState(button01);
-  
-  // currentTime.innerHTML = moment().local();
-  // console.log(moment().local());
-  
-  setTimeout(getCurrentTime,1000)
-};
-
-// getCurrentTime();
-
-function startTime() {
-  var today = moment.tz("Europe/Copenhagen");
-//   var today = moment.locale();
-  document.getElementById("watch2").innerHTML = today.format("HH:mm:ss");
-  document.getElementById("watch1").innerHTML = today.format("DD/MM/YYYY");
-  var t = setTimeout(startTime, 500);
+function renderTimer(item) {
+  document.getElementById("current-time").innerHTML = item;
 }
 
-// startTime();
+function timerFunction() {
+  totalSeconds++;
+  renderTimer(totalSeconds);
+}
 
+function startTimer() {
+  if (alreadyRunning) {
+  } else {
+    alreadyRunning = true;
+    timerCountUp = setInterval(timerFunction, 1000);
+  }
+}
 
+function stopTimer() {
+  alreadyRunning = false;
+  clearInterval(timerCountUp);
+}
 
+function resetTimer() {
+  stopTimer();
+  totalSeconds = 0;
+  renderTimer("RESET");
+  setTimeout(() => {
+    renderTimer(totalSeconds);
+  }, 500);
+}

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Poiret+One|Ranga&display=swap"
         rel="stylesheet">
+    <!-- Font -->
+    <!-- font-family: 'Overpass Mono', monospace; -->
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
 
     <!-- To support old sizes -->
     <!-- <link rel="apple-touch-icon" sizes="57x57" href="https://via.placeholder.com/57x57">
@@ -32,72 +35,73 @@
     <!-- <link rel="icon" sizes="128×128" href="https://via.placeholder.com/57x57"> -->
 
     <title>5X5</title>
-    
+
 </head>
 
 <body>
-    <div class="timer-container">
-        <div id="current-time"></div>
-    </div>
-    <a href="https://foxlioncode.github.io/tenTenChallenge/" target = '_blank'>
-        <h1 class="center-heading">5X5 Challenge</h1>
-    </a>
-    
-    <div id="watch1"></div>
-    <div id="watch2"></div>
+    <h1 class="center-heading">5X5 Challenge</h1>
+    <div class="center-container">
+        <div class="timer-container">
+            <div id="current-time">
+                <time>Chronograph</time>
+            </div>
+            <div class="timer-buttons">
+                <button id="start" onclick="startTimer()">Start</button>
+                <button id="stop" onclick="stopTimer()">Stop</button>
+                <button id="reset" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+        <div class="buttons-container center-container">
+            <ul>
+                <li id="button01" class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
 
-    <hr>
-    <div class="buttons-container center-container">
-        <ul>
-            <li id = "button01" class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
 
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+                <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
+            </ul>
+            <hr>
+        </div>
+        <div class="set">
+            <!-- If all buttons clicked, then reset and +1 to counter. -->
+        </div>
+        <div class="reset-container center-container">
+            <button class="reset-button" onclick="resetBackgroundStyle()">Reset</button>
+            <!-- <a class="reset-button" href="#" onclick="resetBackgroundStyle()">Reset</a> -->
+        </div>
 
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-            <li class="button" onclick="getButtonState(this)" buttonState="0"></li>
-        </ul>
-        <hr>
-    </div>
-    <div class="set">
-        <!-- If all buttons clicked, then reset and +1 to counter. -->
-    </div>
-    <div class="reset-container center-container">
-        <button class="reset-button" onclick="resetBackgroundStyle()">Reset</button>
-        <!-- <a class="reset-button" href="#" onclick="resetBackgroundStyle()">Reset</a> -->
-    </div>
+        <footer>
+            <div class="version">(v1.0.2)</div>
+        </footer>
 
-    <footer>
-        <div class="version">(v1.0.1)</div>
-    </footer>
-
-    <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.7/moment-timezone-with-data-2010-2020.min.js"></script>
-    <!-- <script src="./js/external/moment.min.js"></script> -->
-    <script src="./js/timer.js"></script>
-    <script src="./js/buttonLogic.js"></script>
+        <!-- SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.7/moment-timezone-with-data-2010-2020.min.js"></script>
+        <!-- <script src="./js/external/moment.min.js"></script> -->
+        <script src="./js/timer.js"></script>
+        <script src="./js/buttonLogic.js"></script>
 
 </body>
 

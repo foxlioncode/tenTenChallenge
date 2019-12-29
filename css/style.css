@@ -3,6 +3,10 @@
 /* --> font-family: 'Poiret One', cursive; */
 /* font-family: 'Big Shoulders Display', cursive; */
 
+* {
+    /* font-family: 'Poiret One', cursive; */
+}
+
 h1 {
     font-family: 'Poiret One', cursive;
     font-size: 35px;

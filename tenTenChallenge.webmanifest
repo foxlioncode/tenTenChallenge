@@ -1,0 +1,26 @@
+{
+    "name":"5x5 Challenge",
+    "short_name":"5x5",
+    "description":"Use this app to track your progress and develop better habits.",
+    "icons": [
+        {
+            "src":"./img/logo_192.png",
+            "sizes":"192x192",
+            "type":"img/png"
+        },
+        {
+            "src":"",
+            "sizes":"",
+            "type":""
+        },
+        {
+            "src":"",
+            "sizes":"",
+            "type":""
+        }
+    ],
+    "start_url":"./index.html",
+    "display":"fullscreen",
+    "theme_color":"lightblue",
+    "background_color":"slategray"
+}

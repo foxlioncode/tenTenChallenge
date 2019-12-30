@@ -48,9 +48,12 @@ function stopTimer() {
   renderTimer("STOP");
   setTimeout(() => {
     renderTimer(
-      `${totalHours}h ${totalMinutes}m ${totalSeconds}s ${totalMilliSeconds}`
+        `${(leadingZero = (totalHours < 10) ? "0" : "")}${totalHours}h
+        ${(leadingZero = (totalMinutes < 10) ? "0" : "")}${totalMinutes}m
+        ${(leadingZero = (totalSeconds < 10) ? "0" : "")}${totalSeconds}s
+        ${totalMilliSeconds}`
     );
-  }, 500);
+  }, 250);
 }
 
 function resetTimer() {
@@ -61,6 +64,11 @@ function resetTimer() {
   totalHours = 0;
   renderTimer("RESET");
   setTimeout(() => {
-    renderTimer(totalMilliSeconds);
-  }, 500);
+    renderTimer(
+        `${(leadingZero = (totalHours < 10) ? "0" : "")}${totalHours}h
+        ${(leadingZero = (totalMinutes < 10) ? "0" : "")}${totalMinutes}m
+        ${(leadingZero = (totalSeconds < 10) ? "0" : "")}${totalSeconds}s
+        ${totalMilliSeconds}`
+    );
+  }, 250);
 }
